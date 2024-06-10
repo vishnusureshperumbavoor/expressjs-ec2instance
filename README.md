@@ -18,6 +18,14 @@ Verify Installation
 node --version
 npm --version
 ```
+Clone the repo
+```
+git clone https://github.com/vishnusureshperumbavoor/expressjs-ec2instance.git
+```
+Enter the directory
+```
+cd expressjs-ec2instance
+```
 Install dependencies
 ```
 npm install
