@@ -18,3 +18,11 @@ Verify Installation
 node --version
 npm --version
 ```
+Install dependencies
+```
+npm install
+```
+Run the application
+```
+node app.js
+```
