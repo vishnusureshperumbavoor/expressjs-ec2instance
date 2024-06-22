@@ -1,4 +1,29 @@
-## Install Node.js and npm on ubuntu
+## Prequisites
+NodeJS
+
+## Steps to connect to the instance using SSH client
+Download the pem file after creating instance  
+
+Go the pem file directory  
+
+Give read permission only to the owner of the system
+```
+chmod 400 <pem_file_name>.pem
+```
+example
+```
+chmod 400 nodejs-server-mumbai.pem
+```
+Connect ubuntu device with your ec2 instance
+
+```
+sudo ssh -i <pem_file_name>.pem <your_AMI>@<public_ipv4_address>
+```
+example
+```
+sudo ssh -i nodejs-server-mumbai.pem ubuntu@3.108.191.86
+```
+SSH is connected securely
 
 Update Package Lists:
 ```
@@ -26,11 +51,11 @@ Enter the directory
 ```
 cd expressjs-ec2instance
 ```
-Install dependencies
+
+
+Install dependencies & run the application
+
 ```
 npm install
-```
-Run the application
-```
-node app.js
+npm run dev
 ```
